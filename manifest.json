@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Group Loader",
+  "version": "1.1.0",
+  "description": "Quickly open bookmark folders as organized tab groups. Save and load preset folder selections, and customize group colors.",
+  "permissions": ["bookmarks", "tabs", "storage", "tabGroups"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "homepage_url": "https://github.com/dabombdgd/tab-group-loader",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
